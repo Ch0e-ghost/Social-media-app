@@ -9,6 +9,6 @@ function Post(){
       <p>Comments:</p>
       <Comment />
     </div>
-  )
+  ) 
 }
 export default Post
