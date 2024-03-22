@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import Comment from './Comment';
 
-const [likes, setLikes] = useState(0);
+
+function Post(){
+
+  const [likes, setLikes] = useState(0);
 
 function handleLike(){
   setLikes(likes + 1);
 }
 
-function Post(){
   return(
     <div>
       <h3>Test Post</h3>
