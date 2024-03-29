@@ -1,16 +1,23 @@
 import React from 'react';
 import Post from './components/Post';
+import Feed from './components/Feed';
+import Form from './components/Form';
 function App(){ 
+
+  const [names, setNames] = useState([])
+
+  let handleNewSubmission = (data) => {
+    setNames([...names, data])
+  }
+
   return(
     <div>
       <h1>Fakebook!</h1>
       
-        {/* CreatePostForm */}
+      <Form onNewSubmit={handleNewSubmission}/>
+      
         
-        {/* Feed */}
-        
-        <Post content="This is a test post!" />
-        <Post content="This is another test post!" />
+      <Feed posts={names}/>
     
     </div>
   )
