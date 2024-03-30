@@ -1,7 +1,7 @@
-import React from 'react';
-import Post from './components/Post';
+import './App.css'
 import Feed from './components/Feed';
 import Form from './components/Form';
+import { useState } from 'react'
 function App(){ 
 
   const [names, setNames] = useState([])

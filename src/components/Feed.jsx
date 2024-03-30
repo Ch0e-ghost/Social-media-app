@@ -1,10 +1,10 @@
 function Feed(props){
+
     let rows = props.posts.map((data)=>{
         return(
             <tr>
-                <td>
-                    <Post author={data.author} content={data.content}/>
-                </td>
+                <td>{data.author}</td>
+                <td>{data.content}</td>
             </tr>
         )
     })
@@ -13,7 +13,7 @@ function Feed(props){
         <table>
             <thead>
                 <tr>
-                <th>Author Name</th>
+                <th>Author </th>
                 <th>Content</th>
                 </tr>
             </thead>
