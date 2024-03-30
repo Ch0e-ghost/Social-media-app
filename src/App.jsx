@@ -15,7 +15,6 @@ function App(){
       <h1>Fakebook!</h1>
       
       <Form onNewSubmit={handleNewSubmission}/>
-      
         
       <Feed posts={names}/>
     

@@ -36,14 +36,17 @@ function Form(props){
 
     return (
     <form onSubmit={handleSubmit}>
-            <label for="postAuthor">Name</label>
+            <label for="postAuthor">Name: </label>
             <input type="text" name='postAuthor' onChange={handleAuthorChange} value={author}/>
             <br/>
-            <label for='postContent'>What you thinking</label>
+            <label for='postContent'>What you thinking: </label>
             <input type="text" name='postContent' onChange={handleContentChange} value={content}/>
             <br/>
             <br/>
             <input type="submit" disabled={author ==="" || content ===""}/>
+            <br/>
+            <br/>
+
           </form>
     )
     }

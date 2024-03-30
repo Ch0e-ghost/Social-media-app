@@ -1,10 +1,12 @@
+import { useState } from 'react'
+import Post from './Post';
+
 function Feed(props){
 
     let rows = props.posts.map((data)=>{
         return(
             <tr>
-                <td>{data.author}</td>
-                <td>{data.content}</td>
+                <Post author={data.author} content={data.content} />
             </tr>
         )
     })
@@ -13,8 +15,7 @@ function Feed(props){
         <table>
             <thead>
                 <tr>
-                <th>Author </th>
-                <th>Content</th>
+                <th>Posts </th>
                 </tr>
             </thead>
             <tbody>

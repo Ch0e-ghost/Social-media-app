@@ -12,6 +12,7 @@ function handleLike(){
 
   return(
     <div>
+      <h2>{props.author}</h2>
       <h3>{props.content}</h3>
       
       <p>Likes: {likes}</p>
